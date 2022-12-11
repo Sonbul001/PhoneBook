@@ -19,11 +19,18 @@
     </nav>
     <div class="form">
         <form action="">
-            <label for="name">First Name: </label><br>
-            <input type="text" id="name"><br>
-            <label for="num">Phone Number: </label><br>
-            <input type="text" id="num"><br>
+            <label for="name">Name: </label><br>
+
+            <!-- try to do it using select by populating option from db, if it is difficult then-->
+            <!-- simply use input which i have commented below -->
+
+            <!-- <input type="text" id="name"><br> -->
+            <select name="name" id="name" class="selectoptions">
+                <option>Karim Sonbul</option>
+            </select>
             <button type="submit">Delete Contact</button>
+
+            <!-- a text saying "contact deleted successfully" should pop up if the operation was successful -->
         </form>
     </div>
 </body>
