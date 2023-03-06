@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Phonebook</title>
+</head>
+<body>
+    <nav>
+        <h1><a href="index.php">Contact List</a></h1>
+        <ul>
+            <li><a href="add_contact.html" class="current_page">Add Contact</a></li>
+            <li><a href="delete_contact.php">Delete Contact</a></li>
+            <li><a href="update_contact.html">Update Contact</a></li>
+            <li><a href="search_contact.php">Search Contact</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <form action="add_contact.php" method = "post">
+            <label for="name">Name: </label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="num">Number: </label><br>
+            <input type="text" id="num" name="number"><br>
+            <button type="submit">Add Contact</button>
+
+            <!-- a text saying "contact added successfully" should pop up if the operation was successful -->
+        </form>
+    </div>
+</body>
+</html>
